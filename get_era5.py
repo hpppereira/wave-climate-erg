@@ -22,8 +22,9 @@ c1.retrieve('reanalysis-era5-single-levels', {
                 'product_type':'reanalysis',
                 'variable':['10m_u_component_of_wind','10m_v_component_of_wind','mean_wave_direction',
                             'mean_wave_period','significant_height_of_combined_wind_waves_and_swell'],
-                'year':'2015',
-                'month':['03','04'],
+                'year':['2019'],
+                'month':['01','02','03','04','05','06',
+                         '07','08','09','10','11','12'],
                 'day':['01','02','03',
                        '04','05','06',
                        '07','08','09',
@@ -43,12 +44,13 @@ c1.retrieve('reanalysis-era5-single-levels', {
                         '15:00','16:00','17:00',
                         '18:00','19:00','20:00',
                         '21:00','22:00','23:00'],
-                'grid': "0.36/0.36",
-                'area': "-23.0/-42.0/-24.0/-41.0",
+                'grid': "0.27/0.27",
+                'area': "-32.0/-38.0/-29.0/-33.0",
                 'format':'netcdf'},
-            'ERA5_windwave_param_CF01.nc')
+            'ERA5_param_erg.nc')
 
 # 2D Wave Spectra
+"""
 c2.retrieve('reanalysis-era5-complete', {
             	'class': "ea",
             	'dataset': "era5",
@@ -65,4 +67,5 @@ c2.retrieve('reanalysis-era5-complete', {
             	'area': "-23.0/-42.0/-24.0/-41.0",
             	'format': "netcdf"},
             "ERA5_sfc_wspec_CF01.nc")
+"""
 
