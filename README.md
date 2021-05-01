@@ -1,4 +1,4 @@
-# Wave Climate in Rio Grande Elevation
+# Wave Climate in Rio Grande Rise
 
 - Satellite
 - ERA5 reanalysis
